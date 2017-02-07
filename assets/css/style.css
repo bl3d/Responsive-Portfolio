@@ -51,6 +51,7 @@ header {
 	height: 100px;
 	background-color: #ffffff;
 	border-bottom: solid 2px #cccccc;
+	transition: height 0.5s;
 }
 
 #mainLogo {
@@ -66,6 +67,7 @@ header {
 	text-align: center;
 	line-height: 90px;
 	font-family: 'Georgia', Times, Times New Roman, serif;
+	transition: all 0.5s;
 }
 
 ul#navLinks {
@@ -73,6 +75,7 @@ ul#navLinks {
 	z-index: 50;
 	right: 0;
 	line-height: 100px;
+	transition: line-height 0.5s;
 }
 
 li.mainLink {
@@ -101,6 +104,7 @@ li.mainLink a:hover {
 	width: 960px;
 	height: 100%;
 	margin:0 auto;
+	transition: width 0.5s;
 }
 
 .container {
@@ -119,6 +123,7 @@ li.mainLink a:hover {
 	overflow: auto;
 	padding: 30px;
 	margin-bottom: 40px;
+	transition: width 0.5s;
 }
 
 
@@ -132,6 +137,7 @@ li.mainLink a:hover {
 	width: 210px;
 	padding: 30px;
 	background: #ffffff;	
+	transition: all 0.5s;
 }
 
 ul#socailConnectMenu {
@@ -163,6 +169,7 @@ li.socialLink:hover {
 	width: 200px;
 	float: left;
 	padding: 0px 25px 15px 0px;
+	transition: width 0.5s;
 }
 
 .inPageLink {
@@ -286,14 +293,109 @@ footer{
 
 @media screen and (max-width: 980px){
 
+	.masterWidth{
+		width:730px;
+	}
+
+	header{
+		height: 90px;
+	}
+
+	#mainLogo{
+		bottom: 0px;
+	}
+
+	ul#navLinks{
+		line-height: 90px;
+	}
+
+	#mainContent{
+		width: 355px;
+	}	
+
+	#socialConnect{
+		left: 460px;
+	}
+
+	.bioImg{
+		float: none;
+		width: 355px;
+	}
+
 }
 
 
 @media screen and (max-width: 768px){
 
+	.masterWidth{
+		width: calc(100% - 60px);
+	}
+
+	#mainLogo{ 
+		width: 260px;
+	}
+
+	#mainContent{
+		width: calc(100% - 60px);
+	}	
+
+	#socialConnect{
+		position: relative;
+		left: 0px;
+		width: calc(100% - 60px); 
+		margin-bottom: 40px;
+	}
+
+	ul#socailConnectMenu{
+		text-align: left;
+	}
+
+	.bioImg{
+		float: left;
+		width: 37.5%;
+	}	
+
 }
 
 
 @media screen and (max-width: 640px){
+
+	header{
+		height: 155px;
+	}
+
+	.headerContents{
+		width: 100%;
+	}
+
+	#mainLogo{ 
+		bottom: auto;
+		width: 100%; 
+	}
+
+	ul#navLinks{
+		top: 110px;
+		line-height: 25px;
+		width: 100%;
+		left: 0%;
+		right: 0%;
+		margin: 0 auto;
+	}	
+
+	li.mainLink{
+		width: 33.3%;
+		text-align: center;
+	}
+
+	li.mainLink a{
+	    width: 100%;
+	    display: block;
+	    padding: 0px !important;		
+	}
+
+	.bioImg{
+		float: none;
+		width: 100%;
+	}	
 
 }
