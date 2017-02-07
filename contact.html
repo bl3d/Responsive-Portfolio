@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brent Lewis | Portfolio Example</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+
+  <!-- header with logo and links to all pages -->
+  <header> 
+    <div class="headerContents masterWidth">
+      <a id="mainLogo" href="index.html">Brent Lewis</a>
+      <ul id="navLinks">
+        <li class="mainLink">
+          <a href="index.html">About</a>
+        </li>
+        <li class="mainLink">
+          <a href="portfolio.html">Portfolio</a>
+        </li>
+        <li class="mainLink">
+          <a href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+
+  <!-- main content area -->
+  <div class="container masterWidth">
+
+    <!-- left content holder - main page content -->
+    <section id="mainContent">
+      <h1>Contact</h1>
+      <form id="contactForm">
+        <label for="name">Name</label><br>
+        <input type="text" name="name" placeholder="John Smith"><br>
+
+        <br><label for="email">Email</label><br>
+        <input type="text" name="email" placeholder="example@gmail.com"><br>
+
+        <br><label for="message">Message</label><br>
+        <textarea rows="10" cols="100" name="message"></textarea>
+
+        <br><br>
+        <input id="fakeSubmit" type="submit" value="Submit">
+      </form>      
+    </section>    
+
+    <!-- social media connect area -->
+    <div id="socialConnect">
+      <h2>Connect with Me</h2>
+      <ul id="socailConnectMenu">
+        <li class="socialLink">
+          <a href="https://github.com/bl3d/" target="_blank">
+            <img src="assets/images/socialIcons/github.jpg" alt="Brent Lewis Github Account">
+          </a>
+        </li>
+        <li class="socialLink">
+          <a href="https://www.linkedin.com/in/brent-lewis-4006b14" target="_blank">
+            <img src="assets/images/socialIcons/linkedIn.jpg" alt="Brent Lewis LinkedIn Account">
+          </a>
+        </li>
+        <li class="socialLink">
+          <a href="http://stackoverflow.com/users/6753936/bl3d?tab=profile" target="_blank">
+            <img src="assets/images/socialIcons/stackOverflow.jpg" alt="Brent Lewis Stack Overflow Account">
+          </a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+
+
+  <!-- footer with copyright info -->
+  <footer>
+    <span id="copyrightInfo">&copy;&nbsp;Copyright 2017 Brent Lewis</span>
+  </footer>
+
+
+  <script>
+    document.getElementById("fakeSubmit").addEventListener("click", function(){
+      alert('No message sent - just an example form');
+    }); 
+  </script>
+</body>
+
+</html>
