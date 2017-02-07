@@ -218,6 +218,7 @@ li.pItem {
 	height: 205px;
 	overflow: hidden;
 	margin-bottom: 55px;
+	transition: width 0.5s;
 }
 
 li.pItem:nth-child(odd) {
@@ -322,6 +323,21 @@ footer{
 		width: 355px;
 	}
 
+
+	li.pItem{
+		width: 100%;
+		height: auto;
+	}
+
+	li.pItem a{
+		position: relative; 
+		margin-right: 0;
+	}
+
+	.pThumb{
+		width: 100%;
+	}
+
 }
 
 
@@ -353,7 +369,13 @@ footer{
 	.bioImg{
 		float: left;
 		width: 37.5%;
-	}	
+	}
+
+
+	li.pItem{
+		width: calc(50% - 19px);
+		height: auto;
+	}		
 
 }
 
@@ -396,6 +418,12 @@ footer{
 	.bioImg{
 		float: none;
 		width: 100%;
-	}	
+	}
+
+	li.pItem{
+		/*width: calc(50% - 19px);*/
+		width: 100%;
+		height: auto;
+	}			
 
 }
