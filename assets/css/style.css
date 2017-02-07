@@ -186,7 +186,8 @@ li.socialLink:hover {
 /* contact page styles */
 
 input[type=text], select, textarea {
-    width: 565px;
+    /*width: 565px;*/
+    width: calc(100% - 20px);
     padding: 8px 10px;
     margin: 8px 0;
     display: inline-block;
